@@ -193,7 +193,7 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+           箱-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
             opacity: 0;
             animation: fadeInUp 1s ease-out 0.6s forwards;
             font-size: 1.1rem;
@@ -239,29 +239,6 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 2rem;
-        }
-
-        .container#contact {
-            position: relative;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            background: none;
-            overflow: hidden;
-        }
-
-        .container#contact::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('contact.jpg');
-            background-size: cover;
-            background-position: center;
-            filter: blur(8px);
-            z-index: -1;
         }
 
         .section-title {
@@ -610,7 +587,7 @@
         .footer {
             background: #0f1c35;
             color: white;
-            padding: 4rem 2rem 2rem;
+            padding: 0 2rem 2rem;
         }
 
         .footer-content {
@@ -618,15 +595,14 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
+            gap: 3rem;
+            margin-bottom: 3rem;
         }
 
         .footer h4 {
-            margin-bottom: 1.2rem;
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #ffffff;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 700;
         }
 
         .footer ul {
@@ -634,43 +610,24 @@
         }
 
         .footer ul li {
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.8rem;
         }
 
         .footer a {
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.7);
             text-decoration: none;
-            transition: color 0.3s ease;
-            font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
         .footer a:hover {
             color: #667eea;
         }
 
-        .footer img[src="logo.webp"] {
-            height: 40px;
-            margin-bottom: 1rem;
-        }
-
-        .footer iframe {
-            width: 100%;
-            height: 180px;
-            border-radius: 10px;
-            border: none;
-            margin-top: 1rem;
-        }
-
         .footer-bottom {
             text-align: center;
-            padding: 1.5rem 0;
-            background: #ffffff;
-            border-top: 1px solid #e2e8f0;
-            color: #1e3c72;
-            font-size: 0.9rem;
-            font-weight: 400;
-            width: 100%;
-            position: relative;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
         }
 
         .lightbox {
@@ -969,14 +926,14 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: transparent;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.85) 0%, rgba(37, 99, 235, 0.9) 100%);
             opacity: 0;
-            transition: none;
+            transition: opacity 0.4s ease;
             z-index: 1;
         }
 
         .showcase-item:hover::before {
-            opacity: 0;
+            opacity: 1;
         }
 
         .showcase-item:hover {
@@ -1453,7 +1410,7 @@
                     <p>With wireless connectivity and long battery life, our devices provide continuous monitoring without disrupting your operations. Cloud synchronization ensures data is always accessible and securely backed up.</p>
                 </div>
                 <div class="tech-image">
-                    <img src="ai.webp" alt="Monitoring Technology">
+                    <img src="images.jpeg" alt="Monitoring Technology">
                 </div>
             </div>
 
@@ -1615,7 +1572,7 @@
         </div>
     </div>
 
-    <div class="container" id="contact" style="height:350px;">
+    <div class="container" id="contact" style="background-image:url('contact.jpg');">
         <h2 class="section-title" style="color: black">Ready to Protect Your Products?</h2>
         <p class="section-subtitle" style="color:black">Contact us today to learn how our cold chain monitoring solutions can benefit your organization</p>
         <div style="text-align: center; margin-top: 2rem;">
@@ -1626,8 +1583,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div>
-                <h4>About Us</h4>
-                <img src="logo.webp" alt="Enviro Health Testing Logo" style="height: 40px; margin-bottom: 1rem;">
+                <h4><img src="logo.webp"></h4>
                 <p>Leading provider of thermal and humidity monitoring solutions for temperature-sensitive industries.</p>
             </div>
             <div>
@@ -1655,20 +1611,22 @@
                     <li>Phone: (555) 123-4567</li>
                     <li>24/7 Support Available</li>
                 </ul>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.611417007469!2d-84.39373492425147!3d33.748997573204995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA!5e0!3m2!1sen!2sus!4v1729686400000!5m2!1sen!2sus" 
-                        width="100%" 
-                        height="180" 
-                        style="border:0; border-radius: 10px;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                <iframe style="height:200px; width:200px"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.611417007469!2d-84.39373492425147!3d33.748997573204995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5045d6993098d%3A0x66fede2f990b630b!2sAtlanta%2C%20GA!5e0!3m2!1sen!2sus!4v1729686400000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
+        
+        <div class="footer-bottom" style="background-color:black;height:200px;width:3500X;position: relative;">
+            <p>&copy; 2025 Enviro Health Testing. All rights reserved.</p>
+        </div>
     </footer>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Enviro Health Testing. All rights reserved.</p>
-    </div>
 
     <script>
         // Hero slideshow
